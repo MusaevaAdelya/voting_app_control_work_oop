@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  --primary: #c7365f;
+  --black: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  padding: 10rem 0;
+  color: var(--black);
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: 140rem;
+  min-height: 90rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.main-container {
+  flex: 50%;
+  padding: 0 8rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.title {
+  position: relative;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 7rem 0
+}
+
+
+
+
+.vote-btn {
+  width: 30rem;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-radius: 9px;
+  transition: all 0.75s;
+  text-transform: uppercase;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+
+.candidate-card {
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidate-card:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.candidate-name {
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  padding-top: 1rem;
+
+}
+
+.selected {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.done {
+  width: 20vw;
+  min-width: 300px;
+  margin-top: 10rem
+}
+
+.bar-btn {
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.bar-btn:hover {
+  color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 4rem 4rem 0;
+  gap: 2rem;
+  /* background-color: white; */
+}
+
+.bar-btn i {
+  padding-right: 1rem;
+}
+
+.createCandidate {
+  flex: 70%;
+  padding: 4rem 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.createCandidate form {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 9px;
+  padding: 3rem 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.add-candidate-btn {
+  padding: 1.2rem;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.form-control {
+  font-size: 2rem !important;
+}
+
+.input-group-text {
+  font-size: 2rem !important;
+}
+
+.createCandidate h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.color-primary {
+  color: var(--primary);
+}
